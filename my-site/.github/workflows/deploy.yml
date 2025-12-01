@@ -16,7 +16,7 @@ jobs:
       - run: cp dist/index.html dist/404.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
-        with: { path: dist }      #  根目錄 build 的 dist
+        with: { path: dist }
 
   deploy:
     runs-on: ubuntu-latest
