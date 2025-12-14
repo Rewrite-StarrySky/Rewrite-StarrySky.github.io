@@ -84,8 +84,8 @@ export default function App() {
           </div>
 
           <p className="small" style={{ marginTop: 14 }}>
-            我專注於大型語言模型安全、Prompt Injection / Jailbreak 攻防與自動化測試平台，
-            同時投入 SRL AI互動行為分析與 5G/Edge 網路系統研究。
+            習慣以原理拆解問題，擅長將各研究想法實作出來，經常在各專題擔任發表者或隊長帶領成員實作項目，
+            熱衷實作各種項目研究並參與研討會、專題競賽，熱愛於探索資訊技術和研究，
           </p>
         </div>
 
