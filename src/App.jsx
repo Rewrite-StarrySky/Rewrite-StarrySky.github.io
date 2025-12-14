@@ -63,7 +63,7 @@ export default function App() {
           </div>
 
           <div className="actions">
-            {/* 改成你的真連結 */}
+
             <a className="primary" href="mailto:acs111851@gm.ntcu.edu.tw">
               Email
             </a>
