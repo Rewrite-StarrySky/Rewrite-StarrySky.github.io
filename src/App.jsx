@@ -68,14 +68,14 @@ export default function App() {
               Email
             </a>
             <a
-              href="https://github.com/yourname"
+              href="https://github.com/Rewrite-StarrySky"
               target="_blank"
               rel="noreferrer"
             >
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourname"
+              href="http://www.linkedin.com/in/HongWei-Ciou"
               target="_blank"
               rel="noreferrer"
             >
@@ -83,50 +83,26 @@ export default function App() {
             </a>
           </div>
 
-          <p className="small">
+          <p className="small" style={{ marginTop: 14 }}>
             我專注於大型語言模型安全、Prompt Injection / Jailbreak 攻防與自動化測試平台，
             同時投入 SRL AI互動行為分析與 5G/Edge 網路系統研究。
           </p>
         </div>
 
-        {/* Right (stacked cards to avoid empty space) */}
+        {/* Right stacked (NO GPA card) */}
         <div className="hero-right">
           <div className="card">
             <section>
               <h2>
-                <span className="dot" /> Quick Facts
+                <span className="dot" /> Primary Domains
               </h2>
-              <div className="list">
-                <div className="item">
-                  <div className="row">
-                    <span>GPA</span>
-                    <span>3.67 / 4.3</span>
-                  </div>
-                  <div className="meta">Department Rank: 9 / 54</div>
-                </div>
-
-                <div className="item">
-                  <div className="row">
-                    <span>Primary Domains</span>
-                  </div>
-                  <div className="badges">
-                    <span className="badge">LLM Security</span>
-                    <span className="badge">Prompt Injection Defense</span>
-                    <span className="badge">Automated Red-Teaming</span>
-                    <span className="badge">SRL Analytics</span>
-                    <span className="badge">5G Private Networks</span>
-                    <span className="badge">Edge Computing</span>
-                  </div>
-                </div>
-
-                <div className="item">
-                  <div className="row">
-                    <span>Programming</span>
-                  </div>
-                  <div className="meta">
-                    Python · C/C++ · SQL · JavaScript · PHP
-                  </div>
-                </div>
+              <div className="badges">
+                <span className="badge">LLM Security</span>
+                <span className="badge">Prompt Injection Defense</span>
+                <span className="badge">Automated Red-Teaming</span>
+                <span className="badge">SRL Analytics</span>
+                <span className="badge">5G Private Networks</span>
+                <span className="badge">Edge Computing</span>
               </div>
             </section>
           </div>
@@ -175,7 +151,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Education */}
+      {/* Education (NO GPA / Rank) */}
       <section id="education" className="card">
         <h2>
           <span className="dot" /> Education
@@ -186,10 +162,6 @@ export default function App() {
             <span>2021 – 2025 (expected)</span>
           </div>
           <div className="meta">B.S. in Computer Science and Engineering</div>
-          <ul>
-            <li>GPA: 3.67 / 4.3</li>
-            <li>Department Rank: 9 / 54</li>
-          </ul>
         </div>
       </section>
 
@@ -212,9 +184,7 @@ export default function App() {
             <ul>
               <li>以消費級硬體可訓練/部署的 BERT classifier 作為 LLM 第一線防禦</li>
               <li>ASR 平均降至 3%；CDASR 75%</li>
-              <li>
-                系統設計、分類器訓練、跨模型/多攻擊策略實驗分析
-              </li>
+              <li>系統設計、分類器訓練、跨模型/多攻擊策略實驗分析</li>
             </ul>
           </div>
 
@@ -229,9 +199,7 @@ export default function App() {
             <div className="meta">DLC / DLT · 2nd author</div>
             <ul>
               <li>自動化越獄測試平台，隨機 FLAG 模擬敏感資訊</li>
-              <li>
-                平台架構、攻擊流程整合、跨模型防禦效能量化分析
-              </li>
+              <li>平台架構、攻擊流程整合、跨模型防禦效能量化分析</li>
             </ul>
           </div>
 
@@ -284,20 +252,18 @@ export default function App() {
               <span>2025</span>
             </div>
             <div className="meta">
-              SRL Score, Learning Time, and Academic Performance in Edu-Data
-              Platform
+              SRL Score, Learning Time & Academic Performance (Edu-Data)
             </div>
             <ul>
               <li>Data：因材網平台對話紀錄、使用時數與前後測成績</li>
               <li>方法：相關分析、中介模型、Python 視覺化</li>
-              <li>使用時數對 SRL 正向影響（+3.48；解釋力 26.4%）</li>
-              <li>SRL 對數學成績正向預測（0.314）</li>
+              <li>使用時數 → SRL 顯著正向；SRL → 數學成績正向預測</li>
             </ul>
           </div>
         </div>
       </section>
 
-      {/* Projects (ONE per row, long cards) */}
+      {/* Projects (one per row) */}
       <section id="projects" className="card">
         <h2>
           <span className="dot" /> Selected Projects
@@ -310,9 +276,9 @@ export default function App() {
               <span>2024–2025</span>
             </div>
             <ul>
-              <li>消費級硬體（RTX3050 / i7-12650）訓練輕量化 BERT 分類器</li>
-              <li>針對 Llama / Gemma / Qwen 等模型攻擊前後對照評估</li>
-              <li>量化 ASR / CDASR，驗證低成本可部署前線防禦</li>
+              <li>RTX3050 / i7-12650 訓練輕量化 BERT 分類器</li>
+              <li>Llama / Gemma / Qwen 攻擊前後對照評估</li>
+              <li>量化 ASR / CDASR 驗證可部署前線防禦</li>
             </ul>
           </div>
 
@@ -322,8 +288,8 @@ export default function App() {
               <span>2025</span>
             </div>
             <ul>
-              <li>隨機 FLAG 作敏感資訊標的，模擬多類 Prompt Injection / Jailbreak</li>
-              <li>支援跨模型、跨攻擊策略的批量測試與效能量化</li>
+              <li>隨機 FLAG 作敏感資訊標的，模擬多類 Jailbreak 策略</li>
+              <li>支援跨模型、跨策略批量測試與量化</li>
             </ul>
           </div>
 
@@ -333,21 +299,21 @@ export default function App() {
               <span>2024–2025</span>
             </div>
             <ul>
-              <li>VirtualBox + Ubuntu VM 建 EPC/eNB/UE（srsRAN / Open5GS）</li>
-              <li>Wireshark 觀測封包、UE 連線流程與資源配置</li>
-              <li>MBMS 串流情境調參、量測傳輸效能與延遲</li>
+              <li>Ubuntu VM 建 EPC/eNB/UE（srsRAN / Open5GS）</li>
+              <li>Wireshark 觀測封包/連線流程</li>
+              <li>MBMS 串流調參與效能量測</li>
             </ul>
           </div>
 
           <div className="item">
             <div className="row">
-              <span>Performance Comparison of Docker Containers vs VMs</span>
+              <span>Docker Containers vs Virtual Machines Performance Study</span>
               <span>2024</span>
             </div>
             <ul>
-              <li>sysbench 進行 CPU/Memory/Disk/Matrix 基準測試</li>
-              <li>Docker 多數指標優於 VM（尤其 Disk throughput）</li>
-              <li>Python 雷達圖/時間序列視覺化分析</li>
+              <li>sysbench 基準測試 CPU/Memory/Disk/Matrix</li>
+              <li>Docker 多數指標優於 VM</li>
+              <li>Python 視覺化對照</li>
             </ul>
           </div>
 
@@ -358,8 +324,7 @@ export default function App() {
             </div>
             <ul>
               <li>ReactJS 前端 + Node/Python/PHP 後端 + MySQL</li>
-              <li>負責 API 與推薦/分類算法、系統整合</li>
-              <li>完成標籤管理、推薦、收藏、帳號系統等模組</li>
+              <li>標籤搜尋與推薦/分類算法、系統整合</li>
             </ul>
           </div>
         </div>

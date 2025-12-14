@@ -45,7 +45,7 @@ a{color:inherit; text-decoration:none}
 .nav{
   position:sticky; top:12px; z-index:50;
   backdrop-filter: blur(8px);
-  background: color-mix(in oklabpkab, var(--bg-soft) 72%, transparent);
+  background: color-mix(in oklab, var(--bg-soft) 72%, transparent);
   border:1px solid var(--card-strong);
   border-radius:999px;
   box-shadow: var(--shadow);
@@ -76,9 +76,13 @@ a{color:inherit; text-decoration:none}
   padding:18px;
 }
 
+/* HERO layout fix */
 .hero{
-  display:grid; grid-template-columns: 1.2fr .8fr; gap:18px;
-  align-items:stretch; margin-top:8px;
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:18px;
+  align-items:stretch;
+  margin-top:8px;
 }
 @media (max-width:900px){
   .hero{grid-template-columns:1fr}
@@ -92,6 +96,7 @@ a{color:inherit; text-decoration:none}
     var(--card);
 }
 
+/* right column stacked so no empty space */
 .hero-right{
   display:flex;
   flex-direction:column;
@@ -175,19 +180,10 @@ footer{
   flex-direction:column;
   gap:12px;
 }
-
-/* Make project cards look long and clean */
-#projects .item{
-  padding:16px 18px;
-}
-
+#projects .item{ padding:16px 18px; }
 #projects .row span:first-child{
-  font-size:16px;
-  font-weight:700;
+  font-size:16px; font-weight:700;
 }
-
 #projects .row span:last-child{
-  font-size:13px;
-  color:var(--muted);
-  font-weight:500;
+  font-size:13px; color:var(--muted); font-weight:500;
 }
