@@ -111,7 +111,7 @@ export const cvData = {
       badges: ["🏆 最佳論文獎 (Best Paper Award)", "第一作者 (First Author)", "ITAC 2026"],
       problem: "人形機器人導入非標準化產線易發生邏輯失效，缺少混線系統崩潰與韌性之量化評估。",
       method: "以 AnyLogic 混合 DES 與 ABM 建模，整合 VLA 認知失效、人因疲勞累積與快充排程機制。",
-      results: "900 次蒙地卡羅模擬證實機器人比例達 0.9 陷韌性陷阱崩潰；維持 30% 人力配置具最佳抗擾穩定性。",
+      results: "蒙地卡羅模擬證實機器人比例達 0.9 陷韌性陷阱崩潰；維持 30% 人力配置具最佳抗擾穩定性。",
       contribution: "建構人機混線模擬框架、整合 VLA 失效與人因疲勞動態、量化產線韌性安全邊界。",
       links: {
         pdf: "/papers/itac-2026.pdf",
