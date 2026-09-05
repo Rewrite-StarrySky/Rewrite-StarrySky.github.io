@@ -115,7 +115,7 @@ export const cvData = {
       contribution: "建構人機混線模擬框架、整合 VLA 失效與人因疲勞動態、量化產線韌性安全邊界。",
       links: {
         pdf: "/papers/itac-2026.pdf",
-        code: "https://github.com/Rewrite-StarrySky",
+        code: "https://github.com/Rewrite-StarrySky/Human-Machine-HybridSmartFactorySimulation",
         bibtex: `@inproceedings{ciou2026resource,
   author    = {HONG-WEI CIOU},
   title     = {Resource Allocation and Resilience Analysis of Human-Humanoid Mixed Production Lines under High Load – A Simulation-based Approach},
