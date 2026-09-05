@@ -118,19 +118,7 @@ export default function PublicationsView({ onOpenBibtex }) {
                 {/* Title & Inline PDF Badge */}
                 <div className="entry-title-line">
                   <span className={`entry-title-bold ${pub.id === "itac-2026" ? "en-paper-title" : ""}`}>
-                    {pub.links?.pdf && pub.links.pdf !== "#" ? (
-                      <a
-                        href={pub.links.pdf}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="entry-title-link"
-                        title="點擊查閱論文全文 (Open PDF)"
-                      >
-                        {pub.title}
-                      </a>
-                    ) : (
-                      pub.title
-                    )}
+                    {pub.title}
                   </span>
                   {pub.links?.pdf && pub.links.pdf !== "#" && (
                     <a

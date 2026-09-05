@@ -127,19 +127,7 @@ export default function Publications({ onOpenBibtex }) {
               {/* Titles */}
               <div className="pub-titles">
                 <h3 className={`pub-title-zh ${pub.id === "itac-2026" ? "en-paper-title" : ""}`}>
-                  {pub.links?.pdf && pub.links.pdf !== "#" ? (
-                    <a
-                      href={pub.links.pdf}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="entry-title-link"
-                      title="點擊查閱論文全文 (Open PDF)"
-                    >
-                      {pub.title}
-                    </a>
-                  ) : (
-                    pub.title
-                  )}
+                  {pub.title}
                   {pub.links?.pdf && pub.links.pdf !== "#" && (
                     <a
                       href={pub.links.pdf}
