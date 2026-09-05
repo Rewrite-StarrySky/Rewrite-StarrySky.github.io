@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rewrite-starrysky.github.io/sitemap.xml

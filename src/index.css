@@ -1,73 +1,132 @@
+/* ==========================================================================
+   ACADEMIC INSTITUTION PROFILE DESIGN SYSTEM (STANFORD PROFILES STYLE)
+   ========================================================================== */
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Stanford / Academic Cardinal Red Theme */
+  --cardinal-red: #8C1515;
+  --cardinal-dark: #620f0f;
+  --cardinal-light: #b83a3a;
+  --cardinal-tint: #fcf4f4;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Neutrals & Academic Paper Palette */
+  --bg-page: #fbfbfa;
+  --bg-white: #ffffff;
+  --bg-tabs: #edebe8;
+  --bg-tabs-hover: #e4e2df;
+  --bg-subtle: #f4f4f2;
+  --bg-topic-pill: #f0eee9;
+  --bg-topic-pill-hover: #e5e2db;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  /* Typography Colors */
+  --text-dark: #2e2d29;
+  --text-body: #3b3a36;
+  --text-muted: #5e5d59;
+  --text-light: #767676;
+  --text-link: #8C1515;
+  --text-link-hover: #005080;
+
+  /* Borders & Dividers */
+  --border-subtle: #e2e1de;
+  --border-default: #d6d4d0;
+  --border-dark: #b5b3ae;
+
+  /* Fonts */
+  --font-serif: "Source Serif 4", "Noto Serif TC", Georgia, Cambria, serif;
+  --font-sans: "Source Sans 3", "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+
+  --max-width: 1180px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  font-family: var(--font-sans);
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  line-height: 1.55;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+a {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  border: none;
+  background: none;
 }
 
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Print Profile Stylesheet */
+@media print {
+  .stanford-top-bar,
+  .academic-tabs-bar,
+  .profile-action-links,
+  .stanford-footer-wrap,
+  .search-container,
+  .no-print {
+    display: none !important;
   }
 
-  a:hover {
-    color: #747bff;
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
   }
 
-  button {
-    background-color: #f9f9f9;
+  .profile-banner {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 0 20pt !important;
+    border-bottom: 2pt solid #000000 !important;
+  }
+
+  .profile-name, .hero-titles-wrap h2, .hero-titles-wrap p {
+    color: #000000 !important;
+  }
+
+  .profile-photo-container img {
+    border: 1pt solid #000000 !important;
+  }
+
+  .main-academic-layout {
+    display: block !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .content-column-left, .content-column-right {
+    width: 100% !important;
+  }
+
+  .publication-item {
+    page-break-inside: avoid;
+    border-bottom: 1pt solid #ccc !important;
+    padding-bottom: 12pt !important;
+    margin-bottom: 12pt !important;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: none !important;
   }
 }
