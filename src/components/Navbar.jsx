@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   Sun,
   Moon,
-  Printer,
   Menu,
   X,
   GraduationCap,
@@ -122,15 +121,6 @@ export default function Navbar({ theme, toggleTheme }) {
             )}
           </button>
 
-          <button
-            type="button"
-            className="action-btn print-btn"
-            onClick={() => window.print()}
-            title="Print Academic CV to PDF"
-          >
-            <Printer size={15} />
-            <span className="print-label">Print CV</span>
-          </button>
 
           {/* Mobile Menu Toggle */}
           <button

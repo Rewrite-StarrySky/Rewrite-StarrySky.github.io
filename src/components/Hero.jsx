@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Mail,
-  FileDown,
   GraduationCap,
   Shield,
   Zap,
@@ -103,15 +102,6 @@ export default function Hero() {
             </a>
 
 
-            <button
-              type="button"
-              className="action-pill cv-download-action"
-              onClick={() => window.print()}
-              title="Print or Export CV to PDF"
-            >
-              <FileDown size={16} />
-              <span>Print CV</span>
-            </button>
           </div>
 
           {/* Research Interest Tags */}

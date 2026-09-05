@@ -1,6 +1,6 @@
 import React from "react";
-import { Printer, Mail, ExternalLink } from "lucide-react";
-import { GithubIcon, LinkedinIcon, ScholarIcon } from "./Icons";
+import { Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./Icons";
 import { cvData } from "../data/cvData";
 
 export default function ProfileHero() {
@@ -42,15 +42,6 @@ export default function ProfileHero() {
 
         {/* Right: Academic Action Buttons (Stanford Fei-Fei Li Profile Style) */}
         <div className="profile-action-links">
-          <button
-            type="button"
-            className="action-link-item"
-            onClick={() => window.print()}
-            title="Print Academic Profile"
-          >
-            <Printer size={15} className="action-icon" />
-            <span>PRINT PROFILE</span>
-          </button>
 
           <a
             href={`mailto:${profile.email}`}
