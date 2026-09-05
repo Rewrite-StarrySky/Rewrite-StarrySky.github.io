@@ -218,10 +218,12 @@ export default function CourseMaterialsView() {
             如需教學投影片完整原始檔、實習環境映像檔或跨校教學交流合作，歡迎來信洽詢：
           </p>
           <a
-            href={`mailto:${cvData.profile.email}?subject=Course%20Materials%20Inquiry`}
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${cvData.profile.email}&su=Course%20Materials%20Inquiry`}
+            target="_blank"
+            rel="noreferrer"
             className="sidebar-action-btn"
           >
-            Request Materials via Email
+            Request Materials via Gmail
           </a>
         </div>
       </aside>

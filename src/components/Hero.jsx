@@ -71,9 +71,11 @@ export default function Hero() {
           {/* Action Links Bar */}
           <div className="hero-actions">
             <a
-              href={`mailto:${profile.email}`}
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+              target="_blank"
+              rel="noreferrer"
               className="action-pill primary-action"
-              title="Send Email"
+              title="Send Email via Gmail"
             >
               <Mail size={16} />
               <span>Email</span>

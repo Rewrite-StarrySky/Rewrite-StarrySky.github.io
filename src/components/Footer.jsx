@@ -22,7 +22,12 @@ export default function Footer() {
           </div>
 
           <div className="footer-social-links">
-            <a href={`mailto:${profile.email}`} title="Email">
+            <a
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+              target="_blank"
+              rel="noreferrer"
+              title="Email via Gmail"
+            >
               <Mail size={16} />
             </a>
             <a href={profile.github} target="_blank" rel="noreferrer" title="GitHub">

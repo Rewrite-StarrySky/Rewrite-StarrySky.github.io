@@ -44,9 +44,11 @@ export default function ProfileHero() {
         <div className="profile-action-links">
 
           <a
-            href={`mailto:${profile.email}`}
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+            target="_blank"
+            rel="noreferrer"
             className="action-link-item"
-            title="Email Researcher"
+            title="Compose Email in Gmail"
           >
             <Mail size={15} className="action-icon" />
             <span>EMAIL PROFILE</span>

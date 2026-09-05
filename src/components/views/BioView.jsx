@@ -100,7 +100,13 @@ export default function BioView({ onNavigateTab }) {
               <div>
                 <strong>Email:</strong>
                 <p>
-                  <a href={`mailto:${profile.email}`}>{profile.email}</a>
+                  <a
+                    href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {profile.email}
+                  </a>
                 </p>
               </div>
             </div>

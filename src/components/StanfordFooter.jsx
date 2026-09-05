@@ -13,7 +13,7 @@ export default function StanfordFooter() {
             <span className="footer-sub-name">{profile.institutionEn}</span>
           </div>
           <div className="footer-contact-text">
-            <span>Contact: <a href={`mailto:${profile.email}`}>{profile.email}</a></span>
+            <span>Contact: <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`} target="_blank" rel="noreferrer">{profile.email}</a></span>
             <span className="footer-pipe">|</span>
             <span>Location: {profile.location}</span>
           </div>
